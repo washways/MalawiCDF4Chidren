@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A comprehensive interactive dashboard visualizing CDF for Children investments across Malawi.">
+    <meta name="author" content="Malawi CDF for Children Dashboard">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CDF for Children Dashboard - Malawi">
+    <meta property="og:description"
+        content="Explore and analyze CDF for Children investments by district, category, and child-focused funding indicators across Malawi.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/username/project/main/preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="CDF for Children Dashboard - Malawi">
+    <meta property="twitter:description"
+        content="Explore and analyze CDF for Children investments by district, category, and child-focused funding indicators across Malawi.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/username/project/main/preview.png">
+
+    <title>CDF for Children Dashboard - Malawi</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Turf.js for GeoJSON Processing -->
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <div id="splash-screen" class="splash-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="splash-title">
+        <div class="splash-card glass-panel">
+            <div class="splash-flag-wrap">
+                <span class="mw-flag splash-flag" aria-hidden="true"></span>
+                <h2 id="splash-title">Malawi CDF for Children Dashboard</h2>
+            </div>
+            <p class="splash-lead">
+                This dashboard helps planners explore child-focused CDF investments, compare district and constituency service gaps,
+                and produce print-ready allocation reports with GIS-backed roads and waterways data.
+            </p>
+            <div class="splash-grid">
+                <div><strong>Map Analytics:</strong> Ward-to-constituency geographic context with district filtering.</div>
+                <div><strong>Equity Tool:</strong> Weighted allocation model (children, schools, HCFs, CBCCs).</div>
+                <div><strong>Exports:</strong> Multi-scope print and Excel outputs for national, district, and constituency analysis.</div>
+            </div>
+            <p class="splash-pop-note">
+                <strong>Population definition:</strong> Child population metrics are used for hazard exposure and child-focused funding indicators.
+            </p>
+            <div class="splash-actions">
+                <label class="splash-checkbox">
+                    <input type="checkbox" id="splash-dont-show">
+                    <span>Don't show again on this device</span>
+                </label>
+                <button id="splash-start-btn" class="btn primary-btn">Enter Dashboard</button>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="glass-panel">
+            <div class="header-content">
+                <div class="header-main-row">
+                    <div class="logo">
+                        <span class="mw-flag" aria-hidden="true"></span>
+                        <h1>CDF for Children Dashboard</h1>
+                    </div>
+                    <div class="controls">
+                        <button id="reset-btn" class="btn primary-btn">Reset View</button>
+                        <button id="map-only-btn" class="btn secondary-btn" type="button">Map Only Mode</button>
+                    </div>
+                </div>
+                <div class="top-report-bar">
+                    <div class="top-report-head">
+                        <h3>Print & Excel Reports</h3>
+                        <p>Choose a scope, then output format. Context: <strong id="topbar-district-context">National (Select District for Option 3)</strong></p>
+                    </div>
+                    <div class="report-option-grid">
+                        <div class="report-option-card">
+                            <h4>Option 1: National + District</h4>
+                            <div class="report-option-actions">
+                                <button id="print-national-district-btn" class="btn primary-btn">Print PDF</button>
+                                <button id="excel-national-district-btn" class="btn secondary-btn">Excel</button>
+                            </div>
+                        </div>
+                        <div class="report-option-card">
+                            <h4>Option 2: National + District + Constituency</h4>
+                            <div class="report-option-actions">
+                                <button id="print-national-full-btn" class="btn primary-btn">Print PDF</button>
+                                <button id="excel-national-full-btn" class="btn secondary-btn">Excel</button>
+                            </div>
+                        </div>
+                        <div class="report-option-card">
+                            <h4>Option 3: Selected District</h4>
+                            <select id="option3-district-select" class="dropdown option3-dropdown">
+                                <option value="">Select District For Option 3</option>
+                            </select>
+                            <div class="report-option-actions">
+                                <button id="print-district-btn" class="btn primary-btn">Print PDF</button>
+                                <button id="excel-district-btn" class="btn secondary-btn">Excel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="site-blurb glass-panel">
+            <p>
+                <strong>What this dashboard does:</strong> It combines CDF investment records with constituency and district GIS indicators
+                (children exposure, institutions, roads, waterways) to support transparent planning, equitable allocation modeling,
+                and auditable reporting outputs.
+            </p>
+            <div class="population-definition-note">
+                <strong>Child focus:</strong> Core indicators and map funding-normalization views use child population from hazard extraction outputs.
+            </div>
+            <div class="doc-links-row">
+                <a href="README.md" target="_blank" rel="noopener">Detailed README</a>
+                <a href="METHODOLOGY.md" target="_blank" rel="noopener">Detailed Methodology</a>
+                <a href="hazard_extraction_gee_reference.js" target="_blank" rel="noopener">GEE Hazard Reference Code</a>
+            </div>
+        </section>
+
+        <!-- KPI Cards -->
+        <section class="kpi-container">
+            <div class="kpi-card glass-panel" id="kpi-total">
+                <h3 class="kpi-title">Total Investment</h3>
+                <div class="kpi-value" id="val-total">MWK 0</div>
+                <div class="kpi-subtitle" id="val-region">National Level</div>
+            </div>
+            <div class="kpi-card glass-panel allocation-compact-card" id="allocation-tool-card">
+                <div class="allocation-compact-head">
+                    <h3 class="kpi-title" style="margin: 0;">Fair Allocation Tool</h3>
+                    <button id="allocation-toggle-btn" class="btn secondary-btn compact-toggle-btn" type="button">Expand Tool</button>
+                </div>
+                <p class="allocation-explainer">
+                    Use weighted shares of children and service institutions to estimate fair constituency-level budget targets.
+                    Increase a weight to prioritize that service gap in the allocation formula.
+                </p>
+                <div id="allocation-tool-content" class="allocation-tool-content hidden">
+                    <div class="sliders-section compact-sliders">
+                    <div class="slider-group compact-slider-group">
+                        <label>Children <span id="weight-pop-val">50</span>%</label>
+                        <input type="range" id="weight-pop" min="0" max="100" value="50" class="slider">
+                    </div>
+                    <div class="slider-group compact-slider-group">
+                        <label>Schools <span id="weight-schools-val">25</span>%</label>
+                        <input type="range" id="weight-schools" min="0" max="100" value="25" class="slider">
+                    </div>
+                    <div class="slider-group compact-slider-group">
+                        <label>HCFs <span id="weight-hcfs-val">15</span>%</label>
+                        <input type="range" id="weight-hcfs" min="0" max="100" value="15" class="slider">
+                    </div>
+                    <div class="slider-group compact-slider-group">
+                        <label>CBCCs <span id="weight-cbccs-val">10</span>%</label>
+                        <input type="range" id="weight-cbccs" min="0" max="100" value="10" class="slider">
+                    </div>
+                    <div class="normalization-warning" id="normalization-warning">Weights are normalized to 100%.</div>
+                </div>
+                <div class="table-section compact-table-section">
+                    <h3 id="allocation-table-title" class="compact-table-title">Estimated Distribution (National)</h3>
+                    <div class="table-container compact-table-container">
+                        <table id="allocation-table" class="data-table compact-data-table">
+                            <thead>
+                                <tr>
+                                    <th>Area</th>
+                                    <th>Children Pop.</th>
+                                    <th>Schools</th>
+                                    <th>HCFs</th>
+                                    <th>CBCCs</th>
+                                    <th>Fair Share %</th>
+                                    <th>Target Budget (MWK)</th>
+                                    <th>Target Budget (USD)</th>
+                                    <th>Current Proxy Base</th>
+                                    <th>Diff</th>
+                                    <th>MWK / Inst</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Map Container -->
+            <div class="map-section glass-panel">
+                <div class="section-header map-header">
+                    <div>
+                        <h2>Investment Distribution Map</h2>
+                        <p class="subtitle">Click on a district to filter data</p>
+                        <p id="hazard-context-note" class="hazard-context-note"></p>
+                    </div>
+                    <div class="map-header-controls">
+                        <label for="color-select" class="subtitle">Color By:</label>
+                        <select id="color-select" class="dropdown map-dropdown">
+                            <option value="total">Total Investment</option>
+                            <option value="per_child">$ per Child (District)</option>
+                            <option value="category">Top Category (District)</option>
+                            <option value="specific_category">Specific Category Amount</option>
+                            <option value="specific_category_child">Specific Category $/Child</option>
+                            <option value="hazard_children">Children Exposed to Hazard</option>
+                        </select>
+                        <select id="category-select" class="dropdown map-dropdown hidden">
+                            <!-- Populated in JS -->
+                        </select>
+                        <select id="hazard-metric-select" class="dropdown map-dropdown hidden">
+                            <!-- Populated in JS -->
+                        </select>
+                        <select id="hazard-level-select" class="dropdown map-dropdown hidden">
+                            <option value="district">Hazard View: District</option>
+                            <option value="constituency">Hazard View: Constituency</option>
+                        </select>
+                        <select id="hazard-value-select" class="dropdown map-dropdown hidden">
+                            <option value="count">Hazard Metric: Exposed Children (#)</option>
+                            <option value="pct">Hazard Metric: Exposed Children (%)</option>
+                        </select>
+                        <label class="outline-toggle"><input id="toggle-constituency-outlines" type="checkbox" checked> Constituency Outlines</label>
+                        <label class="outline-toggle"><input id="toggle-district-outlines" type="checkbox" checked> District Outlines</label>
+                    </div>
+                </div>
+                <div class="map-content-layout">
+                    <div id="map" class="map-container map-main"></div>
+                    <div class="info-sidebar">
+                        <div id="district-info-box" class="glass-panel info-panel">
+                            <div
+                                style="color: var(--text-secondary); font-style: italic; text-align: center; margin-top: 40%;">
+                                Hover over the
+                                map for District metrics.</div>
+                        </div>
+                        <div id="constituency-info-box" class="glass-panel info-panel">
+                            <div
+                                style="color: var(--text-secondary); font-style: italic; text-align: center; margin-top: 40%;">
+                                Hover over the
+                                map for Constituency metrics.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="legend-container" id="map-legend"></div>
+            </div>
+
+    <!-- Charts Container -->
+    <div class="charts-section">
+        <details class="chart-accordion" id="category-accordion" open>
+            <summary>
+                <span>Category Analytics</span>
+                <span class="accordion-help" title="Shows allocation totals by investment category for the selected scope.">?</span>
+            </summary>
+            <div class="chart-card glass-panel">
+                <div class="section-header">
+                    <h2 id="category-chart-title">Investment by Category (National)</h2>
+                </div>
+                <div class="chart-container">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+        </details>
+
+        <details class="chart-accordion" id="district-accordion">
+            <summary>
+                <span>District Benchmarking</span>
+                <span class="accordion-help" title="Compares top funded districts or constituency infrastructure counts in a selected district.">?</span>
+            </summary>
+            <div class="chart-card glass-panel">
+                <div class="section-header">
+                    <h2>Top Funded Districts</h2>
+                </div>
+                <div class="chart-container">
+                    <canvas id="districtChart"></canvas>
+                </div>
+            </div>
+        </details>
+    </div>
+    </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Helper scripts for colors mapping -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
