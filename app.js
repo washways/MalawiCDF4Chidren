@@ -443,6 +443,18 @@ async function init() {
                 return fallbackValue;
             }
         };
+        const fetchFirstAvailableText = async (paths, required = false) => {
+            for (const path of paths) {
+                const text = await fetchText(path, '', false);
+                if (text && text.trim()) {
+                    return { path, text };
+                }
+            }
+            if (required) {
+                throw new Error(`Failed to load any of: ${paths.join(', ')}`);
+            }
+            return { path: null, text: '' };
+        };
 
         const useEmbeddedData = () => {
             dashboardData = window.embeddedDashboardData;
@@ -462,7 +474,7 @@ async function init() {
             console.info('Data source: embedded (file protocol mode)');
         } else {
             try {
-                const [dataJson, geoJson, instJson, gisJson, constiGisJson, distBoundJson, constBoundJson, districtHazCsv, constituencyHazCsv] = await Promise.all([
+                const [dataJson, geoJson, instJson, gisJson, constiGisJson, distBoundJson, constBoundJson, districtHazSource, constituencyHazSource] = await Promise.all([
                     fetchJson('dashboard_data.json', null, true),
                     fetchJson('01_Malawi_Districts_2025_Ward_Boundaries_simplified.geojson', null, true),
                     fetchJson('institutions.json', []),
@@ -470,8 +482,8 @@ async function init() {
                     fetchJson('gis_stats_constituency.json', {}),
                     fetchJson('district_boundaries.geojson', null),
                     fetchJson('constituency_boundaries.geojson', null),
-                    fetchText('washways_district_risks_v3.csv', '', true),
-                    fetchText('washways_constituency_risks_v3.csv', '', true)
+                    fetchFirstAvailableText(['washways_district_risks_v4.csv', 'washways_district_risks_v3.csv'], true),
+                    fetchFirstAvailableText(['washways_constituency_risks_v4.csv', 'washways_constituency_risks_v3.csv'], true)
                 ]);
 
                 dashboardData = dataJson;
@@ -482,14 +494,16 @@ async function init() {
                 districtBoundariesData = distBoundJson || null;
                 constituencyBoundariesData = constBoundJson || null;
 
-                const districtHazRows = parseCsvText(districtHazCsv);
-                const constituencyHazRows = parseCsvText(constituencyHazCsv);
+                const districtHazRows = parseCsvText(districtHazSource.text);
+                const constituencyHazRows = parseCsvText(constituencyHazSource.text);
                 districtHazardIndex = parseHazardRows(districtHazRows, 'district').districtIndex;
                 constituencyHazardIndex = parseHazardRows(constituencyHazRows, 'constituency').constituencyIndex;
                 hazardContext = parseHazardContext(districtHazRows)
                     || parseHazardContext(constituencyHazRows)
                     || { ...DEFAULT_HAZARD_CONTEXT };
-                console.info('Data source: live JSON files');
+                console.info(
+                    `Data source: live JSON files | Hazards: ${districtHazSource.path || 'none'}, ${constituencyHazSource.path || 'none'}`
+                );
             } catch (loadErr) {
                 if (!hasEmbeddedData) throw loadErr;
                 console.warn('Live data load failed; falling back to embedded payload.', loadErr);
