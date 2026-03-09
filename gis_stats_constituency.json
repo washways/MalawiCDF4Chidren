@@ -1,0 +1,996 @@
+{
+    "Balaka": {
+        "Balaka Bwaila": {
+            "road_network_km": 664,
+            "waterways_km": 113
+        },
+        "Balaka Ngwangwa": {
+            "road_network_km": 492,
+            "waterways_km": 51
+        },
+        "Balaka Ulongwe": {
+            "road_network_km": 1414,
+            "waterways_km": 116
+        },
+        "Balaka Rivirivi": {
+            "road_network_km": 1411,
+            "waterways_km": 89
+        },
+        "Balaka Utale": {
+            "road_network_km": 1367,
+            "waterways_km": 224
+        }
+    },
+    "Blantyre": {
+        "Blantyre Central": {
+            "road_network_km": 550,
+            "waterways_km": 98
+        },
+        "Blantyre North East": {
+            "road_network_km": 518,
+            "waterways_km": 100
+        },
+        "Blantyre South East": {
+            "road_network_km": 522,
+            "waterways_km": 64
+        },
+        "Blantyre North": {
+            "road_network_km": 867,
+            "waterways_km": 123
+        },
+        "Blantyre West": {
+            "road_network_km": 705,
+            "waterways_km": 271
+        },
+        "Blantyre South West": {
+            "road_network_km": 647,
+            "waterways_km": 131
+        }
+    },
+    "Blantyre City": {
+        "Michiru Chirimba": {
+            "road_network_km": 203,
+            "waterways_km": 17
+        },
+        "Chilomoni Kabula Nancholi": {
+            "road_network_km": 243,
+            "waterways_km": 14
+        },
+        "Mbayani Musa Magasa": {
+            "road_network_km": 56,
+            "waterways_km": 8
+        },
+        "Ndirande Nyambadwe": {
+            "road_network_km": 193,
+            "waterways_km": 19
+        },
+        "Mapanga Mpingwe Mzedi": {
+            "road_network_km": 365,
+            "waterways_km": 33
+        },
+        "South Lunzu": {
+            "road_network_km": 322,
+            "waterways_km": 26
+        },
+        "Soche Stella Maris": {
+            "road_network_km": 225,
+            "waterways_km": 18
+        },
+        "Chichiri Misesa": {
+            "road_network_km": 298,
+            "waterways_km": 15
+        },
+        "Nkolokoti Ndirande Matope": {
+            "road_network_km": 165,
+            "waterways_km": 16
+        },
+        "Chigumula BCA Club Banana": {
+            "road_network_km": 325,
+            "waterways_km": 20
+        }
+    },
+    "Chikwawa": {
+        "Chikwawa North": {
+            "road_network_km": 979,
+            "waterways_km": 721
+        },
+        "Chikwawa Central": {
+            "road_network_km": 781,
+            "waterways_km": 139
+        },
+        "Chikwawa Central West": {
+            "road_network_km": 1319,
+            "waterways_km": 451
+        },
+        "Chikwawa Mkombezi": {
+            "road_network_km": 833,
+            "waterways_km": 218
+        },
+        "Chikwawa West": {
+            "road_network_km": 1044,
+            "waterways_km": 570
+        },
+        "Chikwawa South": {
+            "road_network_km": 921,
+            "waterways_km": 760
+        },
+        "Chikwawa East": {
+            "road_network_km": 843,
+            "waterways_km": 360
+        }
+    },
+    "Chiradzulu": {
+        "Chiradzulu Nyungwe": {
+            "road_network_km": 797,
+            "waterways_km": 91
+        },
+        "Chiradzulu Thubwe": {
+            "road_network_km": 782,
+            "waterways_km": 38
+        },
+        "Chiradzulu Masanjala": {
+            "road_network_km": 666,
+            "waterways_km": 127
+        },
+        "Chiradzulu Midima": {
+            "road_network_km": 843,
+            "waterways_km": 52
+        },
+        "Chiradzulu Nguludi": {
+            "road_network_km": 539,
+            "waterways_km": 60
+        }
+    },
+    "Chitipa": {
+        "Chitipa Chendo": {
+            "road_network_km": 3096,
+            "waterways_km": 283
+        },
+        "Chitipa North": {
+            "road_network_km": 2567,
+            "waterways_km": 556
+        },
+        "Chitipa East": {
+            "road_network_km": 2435,
+            "waterways_km": 530
+        },
+        "Chitipa South": {
+            "road_network_km": 2609,
+            "waterways_km": 676
+        },
+        "Chitipa Central": {
+            "road_network_km": 1874,
+            "waterways_km": 264
+        }
+    },
+    "Dedza": {
+        "Dedza Boma": {
+            "road_network_km": 641,
+            "waterways_km": 81
+        },
+        "Dedza Mtakataka": {
+            "road_network_km": 319,
+            "waterways_km": 40
+        },
+        "Dedza Golomoti": {
+            "road_network_km": 293,
+            "waterways_km": 58
+        },
+        "Dedza Mlunduni": {
+            "road_network_km": 456,
+            "waterways_km": 111
+        },
+        "Dedza Mayani": {
+            "road_network_km": 603,
+            "waterways_km": 150
+        },
+        "Dedza Chikoma": {
+            "road_network_km": 662,
+            "waterways_km": 42
+        },
+        "Dedza Dzalanyama": {
+            "road_network_km": 1574,
+            "waterways_km": 59
+        },
+        "Dedza Mphunzi": {
+            "road_network_km": 889,
+            "waterways_km": 69
+        },
+        "Dedza Kasina": {
+            "road_network_km": 700,
+            "waterways_km": 72
+        },
+        "Dedza Lithipe": {
+            "road_network_km": 848,
+            "waterways_km": 133
+        }
+    },
+    "Dowa": {
+        "Dowa Central": {
+            "road_network_km": 432,
+            "waterways_km": 7
+        },
+        "Dowa Lumbadzi": {
+            "road_network_km": 631,
+            "waterways_km": 77
+        },
+        "Dowa Central East": {
+            "road_network_km": 449,
+            "waterways_km": 68
+        },
+        "Dowa Mndolera": {
+            "road_network_km": 593,
+            "waterways_km": 13
+        },
+        "Dowa West": {
+            "road_network_km": 770,
+            "waterways_km": 22
+        },
+        "Dowa East": {
+            "road_network_km": 679,
+            "waterways_km": 162
+        },
+        "Dowa North East": {
+            "road_network_km": 623,
+            "waterways_km": 56
+        },
+        "Dowa Ngara": {
+            "road_network_km": 901,
+            "waterways_km": 84
+        },
+        "Dowa Kasangadzi": {
+            "road_network_km": 670,
+            "waterways_km": 12
+        },
+        "Dowa  Phudzu": {
+            "road_network_km": 959,
+            "waterways_km": 42
+        }
+    },
+    "Karonga": {
+        "Karonga Songwe": {
+            "road_network_km": 1196,
+            "waterways_km": 328
+        },
+        "Karonga Central": {
+            "road_network_km": 1767,
+            "waterways_km": 826
+        },
+        "Karonga Lufilya": {
+            "road_network_km": 782,
+            "waterways_km": 112
+        },
+        "Karonga Nyungwe": {
+            "road_network_km": 888,
+            "waterways_km": 283
+        },
+        "Karonga South": {
+            "road_network_km": 650,
+            "waterways_km": 83
+        }
+    },
+    "Karonga Town": {
+        "Karonga Town": {
+            "road_network_km": 334,
+            "waterways_km": 34
+        }
+    },
+    "Kasungu": {
+        "Kasungu South West": {
+            "road_network_km": 1445,
+            "waterways_km": 85
+        },
+        "Kasungu South East": {
+            "road_network_km": 1056,
+            "waterways_km": 31
+        },
+        "Kasungu South": {
+            "road_network_km": 1179,
+            "waterways_km": 42
+        },
+        "Kasungu West": {
+            "road_network_km": 1799,
+            "waterways_km": 697
+        },
+        "Kasungu Central West": {
+            "road_network_km": 962,
+            "waterways_km": 77
+        },
+        "Kasungu North East": {
+            "road_network_km": 1891,
+            "waterways_km": 374
+        },
+        "Kasungu East": {
+            "road_network_km": 979,
+            "waterways_km": 32
+        },
+        "Kasungu North North East": {
+            "road_network_km": 1372,
+            "waterways_km": 123
+        },
+        "Kasungu North": {
+            "road_network_km": 1012,
+            "waterways_km": 30
+        },
+        "Kasungu North West": {
+            "road_network_km": 1479,
+            "waterways_km": 30
+        }
+    },
+    "Kasungu Municipality": {
+        "Kasungu Central": {
+            "road_network_km": 236,
+            "waterways_km": 15
+        }
+    },
+    "Likoma Islands": {
+        "Likoma Islands": {
+            "road_network_km": 59,
+            "waterways_km": 8
+        }
+    },
+    "Lilongwe": {
+        "Lilongwe Bunda": {
+            "road_network_km": 534,
+            "waterways_km": 44
+        },
+        "Lilongwe Nkhoma": {
+            "road_network_km": 490,
+            "waterways_km": 42
+        },
+        "Lilongwe Chilobwe": {
+            "road_network_km": 915,
+            "waterways_km": 48
+        },
+        "Lilongwe Phirilanjuzi": {
+            "road_network_km": 1025,
+            "waterways_km": 22
+        },
+        "Lilongwe Chankhandwe": {
+            "road_network_km": 677,
+            "waterways_km": 52
+        },
+        "Lilongwe Central": {
+            "road_network_km": 737,
+            "waterways_km": 79
+        },
+        "Lilongwe Chiwamba": {
+            "road_network_km": 1391,
+            "waterways_km": 281
+        },
+        "Lilongwe Likuni": {
+            "road_network_km": 788,
+            "waterways_km": 76
+        },
+        "Lilongwe East": {
+            "road_network_km": 632,
+            "waterways_km": 299
+        },
+        "Lilongwe Mapuyu South": {
+            "road_network_km": 981,
+            "waterways_km": 49
+        },
+        "Lilongwe Demera": {
+            "road_network_km": 895,
+            "waterways_km": 22
+        },
+        "Lilongwe Msinja North": {
+            "road_network_km": 512,
+            "waterways_km": 5
+        },
+        "Lilongwe Mapuyu North": {
+            "road_network_km": 1208,
+            "waterways_km": 30
+        },
+        "Lilongwe Mpenu": {
+            "road_network_km": 460,
+            "waterways_km": 45
+        },
+        "Lilongwe Mphande": {
+            "road_network_km": 1054,
+            "waterways_km": 9
+        },
+        "Lilongwe Msozi": {
+            "road_network_km": 497,
+            "waterways_km": 23
+        },
+        "Lilongwe Mude": {
+            "road_network_km": 1110,
+            "waterways_km": 13
+        },
+        "Lilongwe Msinja South": {
+            "road_network_km": 1917,
+            "waterways_km": 171
+        },
+        "Lilongwe Nyanja": {
+            "road_network_km": 523,
+            "waterways_km": 14
+        }
+    },
+    "Lilongwe City": {
+        "Lilongwe City Mbuka": {
+            "road_network_km": 135,
+            "waterways_km": 10
+        },
+        "Lilongwe City Kakule": {
+            "road_network_km": 424,
+            "waterways_km": 32
+        },
+        "Lilongwe City Ngwenya": {
+            "road_network_km": 285,
+            "waterways_km": 12
+        },
+        "Lilongwe City Masintha": {
+            "road_network_km": 137,
+            "waterways_km": 11
+        },
+        "Lilongwe City Mtandire-Mtsiliza": {
+            "road_network_km": 244,
+            "waterways_km": 18
+        },
+        "Lilongwe City Lumbadzi": {
+            "road_network_km": 799,
+            "waterways_km": 55
+        },
+        "Lilongwe City Mlodza": {
+            "road_network_km": 122,
+            "waterways_km": 7
+        },
+        "Lilongwe City Nafisi-Chipala": {
+            "road_network_km": 148,
+            "waterways_km": 11
+        },
+        "Lilongwe City Nankhaka": {
+            "road_network_km": 304,
+            "waterways_km": 25
+        },
+        "Lilongwe City Centre": {
+            "road_network_km": 215,
+            "waterways_km": 36
+        },
+        "Lilongwe City Dzenza": {
+            "road_network_km": 313,
+            "waterways_km": 19
+        },
+        "Lilongwe City Bwaila": {
+            "road_network_km": 372,
+            "waterways_km": 24
+        },
+        "Lilongwe City centre": {
+            "road_network_km": 576,
+            "waterways_km": 59
+        }
+    },
+    "Luchenza Minicipal": {
+        "Luchenza": {
+            "road_network_km": 93,
+            "waterways_km": 7
+        }
+    },
+    "Machinga": {
+        "Machinga North East": {
+            "road_network_km": 676,
+            "waterways_km": 68
+        },
+        "Machinga South East": {
+            "road_network_km": 732,
+            "waterways_km": 29
+        },
+        "Machinga Mikoko": {
+            "road_network_km": 651,
+            "waterways_km": 79
+        },
+        "Machinga South": {
+            "road_network_km": 875,
+            "waterways_km": 169
+        },
+        "Machinga Central": {
+            "road_network_km": 879,
+            "waterways_km": 137
+        },
+        "Machinga Central East": {
+            "road_network_km": 574,
+            "waterways_km": 47
+        },
+        "Machinga Likwenu": {
+            "road_network_km": 1138,
+            "waterways_km": 103
+        },
+        "Machinga East": {
+            "road_network_km": 889,
+            "waterways_km": 52
+        }
+    },
+    "Mangochi": {
+        "Mangochi South West": {
+            "road_network_km": 825,
+            "waterways_km": 169
+        },
+        "Mangochi West": {
+            "road_network_km": 685,
+            "waterways_km": 183
+        },
+        "Mangochi Nkungulu": {
+            "road_network_km": 578,
+            "waterways_km": 172
+        },
+        "Mangochi Central": {
+            "road_network_km": 643,
+            "waterways_km": 90
+        },
+        "Mangochi North East": {
+            "road_network_km": 370,
+            "waterways_km": 91
+        },
+        "Mangochi East": {
+            "road_network_km": 483,
+            "waterways_km": 107
+        },
+        "Mangochi North": {
+            "road_network_km": 373,
+            "waterways_km": 119
+        },
+        "Mangochi Malombe": {
+            "road_network_km": 497,
+            "waterways_km": 74
+        },
+        "Mangochi South": {
+            "road_network_km": 746,
+            "waterways_km": 79
+        },
+        "Mangochi Monkey-Bay": {
+            "road_network_km": 623,
+            "waterways_km": 138
+        },
+        "Mangochi Masongola": {
+            "road_network_km": 469,
+            "waterways_km": 56
+        },
+        "Mangochi Lutende": {
+            "road_network_km": 306,
+            "waterways_km": 129
+        }
+    },
+    "Mangochi Town": {
+        "Mangochi Town": {
+            "road_network_km": 105,
+            "waterways_km": 2
+        }
+    },
+    "Mchinji": {
+        "Mchinji Central East": {
+            "road_network_km": 923,
+            "waterways_km": 28
+        },
+        "Mchinji South West": {
+            "road_network_km": 655,
+            "waterways_km": 60
+        },
+        "Mchinji West": {
+            "road_network_km": 379,
+            "waterways_km": 17
+        },
+        "Mchinji East": {
+            "road_network_km": 976,
+            "waterways_km": 28
+        },
+        "Mchinji North": {
+            "road_network_km": 964,
+            "waterways_km": 21
+        },
+        "Mchinji South": {
+            "road_network_km": 863,
+            "waterways_km": 54
+        },
+        "Mchinji North East": {
+            "road_network_km": 1135,
+            "waterways_km": 57
+        }
+    },
+    "Mulanje": {
+        "Mulanje North": {
+            "road_network_km": 713,
+            "waterways_km": 91
+        },
+        "Mulanje South": {
+            "road_network_km": 604,
+            "waterways_km": 150
+        },
+        "Mulanje Central": {
+            "road_network_km": 718,
+            "waterways_km": 58
+        },
+        "Mulanje Bale": {
+            "road_network_km": 883,
+            "waterways_km": 106
+        },
+        "Mulanje West": {
+            "road_network_km": 428,
+            "waterways_km": 81
+        },
+        "Mulanje South West": {
+            "road_network_km": 578,
+            "waterways_km": 27
+        },
+        "Mulanje South East": {
+            "road_network_km": 664,
+            "waterways_km": 102
+        },
+        "Mulanje Pasani": {
+            "road_network_km": 1463,
+            "waterways_km": 270
+        },
+        "Mulanje Limbuli": {
+            "road_network_km": 332,
+            "waterways_km": 88
+        }
+    },
+    "Mwanza": {
+        "Mwanza Central": {
+            "road_network_km": 1327,
+            "waterways_km": 461
+        },
+        "Mwanza West": {
+            "road_network_km": 1148,
+            "waterways_km": 347
+        }
+    },
+    "Mzimba": {
+        "Mzimba Perekezi": {
+            "road_network_km": 1023,
+            "waterways_km": 104
+        },
+        "Mzimba Hora": {
+            "road_network_km": 995,
+            "waterways_km": 52
+        },
+        "Mzimba North East": {
+            "road_network_km": 1531,
+            "waterways_km": 181
+        },
+        "Mzimba West": {
+            "road_network_km": 3146,
+            "waterways_km": 169
+        },
+        "Mzimba Solola": {
+            "road_network_km": 1769,
+            "waterways_km": 128
+        },
+        "Mzimba South West": {
+            "road_network_km": 985,
+            "waterways_km": 68
+        },
+        "Mzimba Central": {
+            "road_network_km": 1568,
+            "waterways_km": 71
+        },
+        "Mzimba Kafukule": {
+            "road_network_km": 2696,
+            "waterways_km": 126
+        },
+        "Mzimba East": {
+            "road_network_km": 1316,
+            "waterways_km": 224
+        },
+        "Mzimba North": {
+            "road_network_km": 1865,
+            "waterways_km": 90
+        },
+        "Mzimba South East": {
+            "road_network_km": 986,
+            "waterways_km": 213
+        },
+        "Mzimba South": {
+            "road_network_km": 2022,
+            "waterways_km": 143
+        },
+        "Mzimba Luwerezi": {
+            "road_network_km": 979,
+            "waterways_km": 87
+        }
+    },
+    "Mzuzu City": {
+        "Mzuzu City South West": {
+            "road_network_km": 334,
+            "waterways_km": 15
+        },
+        "Mzuzu City South East": {
+            "road_network_km": 358,
+            "waterways_km": 29
+        },
+        "Mzuzu City North": {
+            "road_network_km": 407,
+            "waterways_km": 21
+        }
+    },
+    "Neno": {
+        "Neno North": {
+            "road_network_km": 1691,
+            "waterways_km": 507
+        },
+        "Neno South": {
+            "road_network_km": 2059,
+            "waterways_km": 723
+        },
+        "Neno East": {
+            "road_network_km": 975,
+            "waterways_km": 330
+        }
+    },
+    "Nkhatabay": {
+        "Nkhatabay Central": {
+            "road_network_km": 314,
+            "waterways_km": 53
+        },
+        "Nkhatabay North": {
+            "road_network_km": 1117,
+            "waterways_km": 76
+        },
+        "Nkhatabay South East": {
+            "road_network_km": 312,
+            "waterways_km": 83
+        },
+        "Nkhatabay West": {
+            "road_network_km": 1115,
+            "waterways_km": 158
+        },
+        "Nkhatabay South": {
+            "road_network_km": 443,
+            "waterways_km": 130
+        },
+        "Nkhatabay North West": {
+            "road_network_km": 339,
+            "waterways_km": 211
+        }
+    },
+    "Nkhotahota": {
+        "Nkhotakota Liwaladzi": {
+            "road_network_km": 2057,
+            "waterways_km": 379
+        }
+    },
+    "Nkhotakota": {
+        "Nkhotakota Central": {
+            "road_network_km": 1412,
+            "waterways_km": 320
+        },
+        "Nkhotakota Dwangwa": {
+            "road_network_km": 2477,
+            "waterways_km": 492
+        },
+        "Nkhotakota Chia": {
+            "road_network_km": 566,
+            "waterways_km": 85
+        },
+        "Nkhotakota Mkhula": {
+            "road_network_km": 1165,
+            "waterways_km": 158
+        }
+    },
+    "Nsanje": {
+        "Nsanje Central": {
+            "road_network_km": 1193,
+            "waterways_km": 839
+        },
+        "Nsanje Lalanje": {
+            "road_network_km": 996,
+            "waterways_km": 430
+        },
+        "Nsanje South West": {
+            "road_network_km": 633,
+            "waterways_km": 336
+        },
+        "Nsanje South": {
+            "road_network_km": 1292,
+            "waterways_km": 665
+        },
+        "Nsanje North": {
+            "road_network_km": 1009,
+            "waterways_km": 446
+        }
+    },
+    "Ntcheu": {
+        "Ntcheu South": {
+            "road_network_km": 960,
+            "waterways_km": 207
+        },
+        "Ntcheu Central East": {
+            "road_network_km": 631,
+            "waterways_km": 78
+        },
+        "Ntcheu North": {
+            "road_network_km": 412,
+            "waterways_km": 123
+        },
+        "Ntcheu Bwanje": {
+            "road_network_km": 646,
+            "waterways_km": 148
+        },
+        "Ntcheu Central": {
+            "road_network_km": 336,
+            "waterways_km": 44
+        },
+        "Ntcheu Central Central East": {
+            "road_network_km": 339,
+            "waterways_km": 45
+        },
+        "Ntcheu Dzonzi Mzai": {
+            "road_network_km": 605,
+            "waterways_km": 21
+        },
+        "Ntcheu North West": {
+            "road_network_km": 437,
+            "waterways_km": 67
+        }
+    },
+    "Ntchisi": {
+        "Ntchisi West": {
+            "road_network_km": 713,
+            "waterways_km": 29
+        },
+        "Ntchisi South": {
+            "road_network_km": 549,
+            "waterways_km": 17
+        },
+        "Ntchisi North": {
+            "road_network_km": 912,
+            "waterways_km": 71
+        },
+        "Ntchisi East": {
+            "road_network_km": 551,
+            "waterways_km": 67
+        },
+        "Ntchisi Central East": {
+            "road_network_km": 446,
+            "waterways_km": 60
+        }
+    },
+    "Phalombe": {
+        "Phalombe Central": {
+            "road_network_km": 685,
+            "waterways_km": 65
+        },
+        "Phalombe North": {
+            "road_network_km": 1822,
+            "waterways_km": 143
+        },
+        "Phalombe North East": {
+            "road_network_km": 905,
+            "waterways_km": 169
+        },
+        "Phalombe South": {
+            "road_network_km": 426,
+            "waterways_km": 46
+        },
+        "Phalombe East": {
+            "road_network_km": 403,
+            "waterways_km": 61
+        }
+    },
+    "Rumphi": {
+        "Rumphi Central": {
+            "road_network_km": 777,
+            "waterways_km": 81
+        },
+        "Rumphi East": {
+            "road_network_km": 950,
+            "waterways_km": 152
+        },
+        "Rumphi North": {
+            "road_network_km": 1266,
+            "waterways_km": 126
+        },
+        "Rumphi West": {
+            "road_network_km": 1594,
+            "waterways_km": 120
+        }
+    },
+    "Salima": {
+        "Salima South": {
+            "road_network_km": 1035,
+            "waterways_km": 139
+        },
+        "Salima Central": {
+            "road_network_km": 751,
+            "waterways_km": 8
+        },
+        "Salima South Linthipe": {
+            "road_network_km": 1413,
+            "waterways_km": 306
+        },
+        "Salima Central West": {
+            "road_network_km": 1215,
+            "waterways_km": 81
+        },
+        "Salima North": {
+            "road_network_km": 1215,
+            "waterways_km": 222
+        },
+        "Salima Central East": {
+            "road_network_km": 1001,
+            "waterways_km": 61
+        }
+    },
+    "Thyolo": {
+        "Thyolo Thava": {
+            "road_network_km": 721,
+            "waterways_km": 97
+        },
+        "Thyolo Thekerani": {
+            "road_network_km": 471,
+            "waterways_km": 109
+        },
+        "Thyolo Central": {
+            "road_network_km": 1431,
+            "waterways_km": 71
+        },
+        "Thyolo Goliyati": {
+            "road_network_km": 1371,
+            "waterways_km": 138
+        },
+        "Thyolo Khonjeni / Mangunda": {
+            "road_network_km": 818,
+            "waterways_km": 96
+        },
+        "Thyolo Masambanjati": {
+            "road_network_km": 626,
+            "waterways_km": 82
+        },
+        "Thyolo Mikolongwe": {
+            "road_network_km": 1268,
+            "waterways_km": 89
+        },
+        "Thyolo Bvumbwe": {
+            "road_network_km": 1308,
+            "waterways_km": 174
+        }
+    },
+    "Zomba": {
+        "Zomba Chingale": {
+            "road_network_km": 640,
+            "waterways_km": 186
+        },
+        "Zomba Malosa": {
+            "road_network_km": 491,
+            "waterways_km": 115
+        },
+        "Zomba Nsondole": {
+            "road_network_km": 708,
+            "waterways_km": 211
+        },
+        "Zomba Likangala": {
+            "road_network_km": 2216,
+            "waterways_km": 113
+        },
+        "Zomba Matiya": {
+            "road_network_km": 1891,
+            "waterways_km": 78
+        },
+        "Zomba Chikomwe": {
+            "road_network_km": 600,
+            "waterways_km": 30
+        },
+        "Zomba Ntonya": {
+            "road_network_km": 499,
+            "waterways_km": 81
+        },
+        "Zomba Thondwe": {
+            "road_network_km": 448,
+            "waterways_km": 23
+        },
+        "Zomba Changalume": {
+            "road_network_km": 468,
+            "waterways_km": 103
+        }
+    },
+    "Zomba City": {
+        "Zomba City South": {
+            "road_network_km": 144,
+            "waterways_km": 14
+        },
+        "Zomba City North": {
+            "road_network_km": 177,
+            "waterways_km": 19
+        }
+    }
+}
