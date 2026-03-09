@@ -98,8 +98,8 @@ Administrative units:
 
 ### 3.4 GEE Output Tables
 Primary exported files:
-- `washways_district_risks_v3.csv` (current)
-- `washways_constituency_risks_v3.csv` (current)
+- `washways_district_risks_v4.csv` (current)
+- `washways_constituency_risks_v4.csv` (current)
 
 Selected output columns include:
 - `child_population`
