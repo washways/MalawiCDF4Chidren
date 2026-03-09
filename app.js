@@ -2810,7 +2810,8 @@ function exportCSV(mode = EXPORT_MODE_NATIONAL_DISTRICT) {
         return;
     }
 
-    let csvContent = "data:text/csv;charset=utf-8,";
+    const csvRows = [];
+    let dataRowCount = 0;
     const baseColumns = [
         'Level',
         'District',
@@ -2833,10 +2834,12 @@ function exportCSV(mode = EXPORT_MODE_NATIONAL_DISTRICT) {
         'Target Budget per Child (USD)',
         'MWK per Inst'
     ];
-    const detailedHeader = `${baseColumns.concat(getCategoryPerChildHeaderColumns(), getHazardCsvHeaderColumns()).join(",")}\n`;
+    const detailedHeader = baseColumns
+        .concat(getCategoryPerChildHeaderColumns(), getHazardCsvHeaderColumns())
+        .join(",");
 
     if (mode === EXPORT_MODE_NATIONAL_DISTRICT) {
-        csvContent += detailedHeader;
+        csvRows.push(detailedHeader);
         const districtRows = getDistrictAggregates(allocationResults, null);
         districtRows.forEach(d => {
             const childrenTotal = toNumber(d.hazard?.totalChildren);
@@ -2867,10 +2870,11 @@ function exportCSV(mode = EXPORT_MODE_NATIONAL_DISTRICT) {
                 ...getDistrictCategoryPerChildValues(d.district, childrenTotal),
                 ...getHazardCsvValues(d.hazard)
             ].join(",");
-            csvContent += row + "\n";
+            csvRows.push(row);
+            dataRowCount += 1;
         });
     } else if (mode === EXPORT_MODE_NATIONAL_FULL || mode === EXPORT_MODE_DISTRICT) {
-        csvContent += detailedHeader;
+        csvRows.push(detailedHeader);
         const districtRows = getDistrictAggregates(
             allocationResults,
             mode === EXPORT_MODE_DISTRICT ? currentSelection : null
@@ -2904,7 +2908,8 @@ function exportCSV(mode = EXPORT_MODE_NATIONAL_DISTRICT) {
                 ...getDistrictCategoryPerChildValues(d.district, childrenTotal),
                 ...getHazardCsvValues(d.hazard)
             ].join(",");
-            csvContent += row + "\n";
+            csvRows.push(row);
+            dataRowCount += 1;
         });
 
         const constituencyRows = mode === EXPORT_MODE_DISTRICT
@@ -2944,17 +2949,26 @@ function exportCSV(mode = EXPORT_MODE_NATIONAL_DISTRICT) {
                     ...getBlankCategoryPerChildValues(),
                     ...getHazardCsvValues(cHazard)
                 ].join(",");
-                csvContent += row + "\n";
+                csvRows.push(row);
+                dataRowCount += 1;
             });
     }
 
-    const encodedUri = encodeURI(csvContent);
+    if (dataRowCount === 0) {
+        alert("No export rows were generated for the current selection.");
+        return;
+    }
+
+    const csvContent = `\uFEFF${csvRows.join("\n")}\n`;
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const downloadUrl = URL.createObjectURL(blob);
     const link = document.createElement("a");
-    link.setAttribute("href", encodedUri);
+    link.setAttribute("href", downloadUrl);
     link.setAttribute("download", `cdf_for_children_export_${mode}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    URL.revokeObjectURL(downloadUrl);
 }
 
 // Start
