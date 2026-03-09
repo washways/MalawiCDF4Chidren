@@ -1,0 +1,158 @@
+{
+    "Balaka": {
+        "road_network_km": 5348,
+        "waterways_km": 593
+    },
+    "Blantyre": {
+        "road_network_km": 3808,
+        "waterways_km": 787
+    },
+    "Chikwawa": {
+        "road_network_km": 6720,
+        "waterways_km": 3218
+    },
+    "Chiradzulu": {
+        "road_network_km": 3627,
+        "waterways_km": 368
+    },
+    "Chitipa": {
+        "road_network_km": 12581,
+        "waterways_km": 2309
+    },
+    "Dedza": {
+        "road_network_km": 6985,
+        "waterways_km": 816
+    },
+    "Dowa": {
+        "road_network_km": 6707,
+        "waterways_km": 542
+    },
+    "Karonga": {
+        "road_network_km": 5284,
+        "waterways_km": 1632
+    },
+    "Kasungu": {
+        "road_network_km": 13173,
+        "waterways_km": 1521
+    },
+    "Likoma": {
+        "road_network_km": 59,
+        "waterways_km": 7
+    },
+    "Lilongwe": {
+        "road_network_km": 16345,
+        "waterways_km": 1325
+    },
+    "Machinga": {
+        "road_network_km": 6414,
+        "waterways_km": 684
+    },
+    "Mangochi": {
+        "road_network_km": 6598,
+        "waterways_km": 1405
+    },
+    "Mchinji": {
+        "road_network_km": 5895,
+        "waterways_km": 265
+    },
+    "Mulanje": {
+        "road_network_km": 6381,
+        "waterways_km": 973
+    },
+    "Mwanza": {
+        "road_network_km": 2475,
+        "waterways_km": 808
+    },
+    "Mzimba": {
+        "road_network_km": 20882,
+        "waterways_km": 1658
+    },
+    "Neno": {
+        "road_network_km": 4726,
+        "waterways_km": 1560
+    },
+    "Nkhata Bay": {
+        "road_network_km": 4284,
+        "waterways_km": 514
+    },
+    "Nkhotakota": {
+        "road_network_km": 5620,
+        "waterways_km": 1055
+    },
+    "Nsanje": {
+        "road_network_km": 5124,
+        "waterways_km": 2717
+    },
+    "Ntcheu": {
+        "road_network_km": 4366,
+        "waterways_km": 733
+    },
+    "Ntchisi": {
+        "road_network_km": 3171,
+        "waterways_km": 243
+    },
+    "Phalombe": {
+        "road_network_km": 4240,
+        "waterways_km": 484
+    },
+    "Rumphi": {
+        "road_network_km": 4587,
+        "waterways_km": 478
+    },
+    "Salima": {
+        "road_network_km": 6630,
+        "waterways_km": 816
+    },
+    "Thyolo": {
+        "road_network_km": 8015,
+        "waterways_km": 857
+    },
+    "Zomba": {
+        "road_network_km": 7961,
+        "waterways_km": 938
+    },
+    "Blantyre City": {
+        "road_network_km": 2395,
+        "waterways_km": 186
+    },
+    "Karonga Town": {
+        "road_network_km": 334,
+        "waterways_km": 34
+    },
+    "Kasungu Municipality": {
+        "road_network_km": 236,
+        "waterways_km": 15
+    },
+    "Likoma Islands": {
+        "road_network_km": 59,
+        "waterways_km": 8
+    },
+    "Lilongwe City": {
+        "road_network_km": 4074,
+        "waterways_km": 319
+    },
+    "Luchenza Minicipal": {
+        "road_network_km": 93,
+        "waterways_km": 7
+    },
+    "Mangochi Town": {
+        "road_network_km": 105,
+        "waterways_km": 2
+    },
+    "Mzuzu City": {
+        "road_network_km": 1099,
+        "waterways_km": 65
+    },
+    "Nkhatabay": {
+        "road_network_km": 3639,
+        "waterways_km": 710
+    },
+    "Nkhotahota": {
+        "road_network_km": 2057,
+        "waterways_km": 379
+    },
+    "Zomba City": {
+        "road_network_km": 321,
+        "waterways_km": 33
+    }
+}
