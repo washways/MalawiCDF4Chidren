@@ -28,8 +28,8 @@ Core input datasets:
 - `institutions.json`: institution point dataset (schools/HCFs/CBCCs).
 - `gis_stats.json`: district GIS metrics (roads, waterways, etc.).
 - `gis_stats_constituency.json`: constituency GIS metrics.
-- `washways_district_risks_v3.csv`: district hazard outputs (current).
-- `washways_constituency_risks_v3.csv`: constituency hazard outputs (current).
+- `washways_district_risks_v4.csv`: district hazard outputs (current).
+- `washways_constituency_risks_v4.csv`: constituency hazard outputs (current).
 
 Reference scripts:
 - `hazard_extraction_gee_reference.js`: GEE reference script used to generate hazard exports.
