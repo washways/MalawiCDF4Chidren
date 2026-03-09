@@ -117,6 +117,12 @@ def parse_hazard_context(path):
             'rainTier3': to_number(first.get('rain_exceed_days_tier_3')) or 30.0
         }
 
+def first_existing_path(paths):
+    for path in paths:
+        if os.path.exists(path):
+            return path
+    return ''
+
 def build_standalone():
     # Read assets
     with open('index.html', 'r', encoding='utf-8') as f:
@@ -164,16 +170,25 @@ def build_standalone():
     except FileNotFoundError:
         constituency_boundaries_json = 'null'
 
+    district_hazard_path = first_existing_path([
+        'washways_district_risks_v4.csv',
+        'washways_district_risks_v3.csv'
+    ])
+    constituency_hazard_path = first_existing_path([
+        'washways_constituency_risks_v4.csv',
+        'washways_constituency_risks_v3.csv'
+    ])
+
     district_hazards_json = json.dumps(
-        parse_hazard_csv('washways_district_risks_v3.csv', 'district'),
+        parse_hazard_csv(district_hazard_path, 'district'),
         ensure_ascii=False
     )
     constituency_hazards_json = json.dumps(
-        parse_hazard_csv('washways_constituency_risks_v3.csv', 'constituency'),
+        parse_hazard_csv(constituency_hazard_path, 'constituency'),
         ensure_ascii=False
     )
     hazard_context_json = json.dumps(
-        parse_hazard_context('washways_district_risks_v3.csv') or parse_hazard_context('washways_constituency_risks_v3.csv'),
+        parse_hazard_context(district_hazard_path) or parse_hazard_context(constituency_hazard_path),
         ensure_ascii=False
     )
 
@@ -209,7 +224,9 @@ def build_standalone():
     output_filename = 'CDF_Dashboard.html'
     with open(output_filename, 'w', encoding='utf-8') as f:
         f.write(html_content)
-        
+
+    print(f"Embedded district hazard source: {district_hazard_path or 'none'}")
+    print(f"Embedded constituency hazard source: {constituency_hazard_path or 'none'}")
     print(f"Successfully generated standalone dashboard: {output_filename}")
 
 if __name__ == "__main__":
