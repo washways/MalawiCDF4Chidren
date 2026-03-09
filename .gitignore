@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Raw/nonessential source artifacts (not needed for minimal publish repo)
+*.xlsx
+01_Malawi_Districts_2025_Ward_Boundaries.geojson
+data.csv
+
+# Local processing helpers (keep out of minimal dashboard repo)
+inspect_*.py
+prepare_data.py
+process_institutions.py
+simplify_geojson.py
+fetch_osm_stats.py
+
+# Optional generated output
+CDF_Dashboard.html
+
