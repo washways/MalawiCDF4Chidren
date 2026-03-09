@@ -1,0 +1,482 @@
+{
+  "districts": {
+    "Lilongwe City": {
+      "total": 60000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 43200000000.0,
+        "District Wide Projects": 6000000000.0,
+        "Education Bursaries": 1800000000.0,
+        "Project Management Costs": 3000000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 3000000000.0,
+        "Sports and Creative Arts": 600000000.0,
+        "Women Empowerment": 1200000000.0,
+        "Youth Empowerment": 1200000000.0
+      }
+    },
+    "Mzuzu City": {
+      "total": 15000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 10800000000.0,
+        "District Wide Projects": 1500000000.0,
+        "Education Bursaries": 450000000.0,
+        "Project Management Costs": 750000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 750000000.0,
+        "Sports and Creative Arts": 150000000.0,
+        "Women Empowerment": 300000000.0,
+        "Youth Empowerment": 300000000.0
+      }
+    },
+    "Balaka": {
+      "total": 25000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 18000000000.0,
+        "District Wide Projects": 2500000000.0,
+        "Education Bursaries": 750000000.0,
+        "Project Management Costs": 1250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1250000000.0,
+        "Sports and Creative Arts": 250000000.0,
+        "Women Empowerment": 500000000.0,
+        "Youth Empowerment": 500000000.0
+      }
+    },
+    "Blantyre City": {
+      "total": 50000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 36000000000.0,
+        "District Wide Projects": 5000000000.0,
+        "Education Bursaries": 1500000000.0,
+        "Project Management Costs": 2500000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 2500000000.0,
+        "Sports and Creative Arts": 500000000.0,
+        "Women Empowerment": 1000000000.0,
+        "Youth Empowerment": 1000000000.0
+      }
+    },
+    "Blantyre": {
+      "total": 30000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 21600000000.0,
+        "District Wide Projects": 3000000000.0,
+        "Education Bursaries": 900000000.0,
+        "Project Management Costs": 1500000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1500000000.0,
+        "Sports and Creative Arts": 300000000.0,
+        "Women Empowerment": 600000000.0,
+        "Youth Empowerment": 600000000.0
+      }
+    },
+    "Chikwawa": {
+      "total": 35000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 25200000000.0,
+        "District Wide Projects": 3500000000.0,
+        "Education Bursaries": 1050000000.0,
+        "Project Management Costs": 1750000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1750000000.0,
+        "Sports and Creative Arts": 350000000.0,
+        "Women Empowerment": 700000000.0,
+        "Youth Empowerment": 700000000.0
+      }
+    },
+    "Chiradzulu": {
+      "total": 25000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 18000000000.0,
+        "District Wide Projects": 2500000000.0,
+        "Education Bursaries": 750000000.0,
+        "Project Management Costs": 1250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1250000000.0,
+        "Sports and Creative Arts": 250000000.0,
+        "Women Empowerment": 500000000.0,
+        "Youth Empowerment": 500000000.0
+      }
+    },
+    "Chitipa": {
+      "total": 25000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 18000000000.0,
+        "District Wide Projects": 2500000000.0,
+        "Education Bursaries": 750000000.0,
+        "Project Management Costs": 1250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1250000000.0,
+        "Sports and Creative Arts": 250000000.0,
+        "Women Empowerment": 500000000.0,
+        "Youth Empowerment": 500000000.0
+      }
+    },
+    "Dedza": {
+      "total": 50000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 36000000000.0,
+        "District Wide Projects": 5000000000.0,
+        "Education Bursaries": 1500000000.0,
+        "Project Management Costs": 2500000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 2500000000.0,
+        "Sports and Creative Arts": 500000000.0,
+        "Women Empowerment": 1000000000.0,
+        "Youth Empowerment": 1000000000.0
+      }
+    },
+    "Dowa": {
+      "total": 50000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 36000000000.0,
+        "District Wide Projects": 5000000000.0,
+        "Education Bursaries": 1500000000.0,
+        "Project Management Costs": 2500000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 2500000000.0,
+        "Sports and Creative Arts": 500000000.0,
+        "Women Empowerment": 1000000000.0,
+        "Youth Empowerment": 1000000000.0
+      }
+    },
+    "Karonga": {
+      "total": 25000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 18000000000.0,
+        "District Wide Projects": 2500000000.0,
+        "Education Bursaries": 750000000.0,
+        "Project Management Costs": 1250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1250000000.0,
+        "Sports and Creative Arts": 250000000.0,
+        "Women Empowerment": 500000000.0,
+        "Youth Empowerment": 500000000.0
+      }
+    },
+    "Karonga Town": {
+      "total": 5000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 3600000000.0,
+        "District Wide Projects": 500000000.0,
+        "Education Bursaries": 150000000.0,
+        "Project Management Costs": 250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 250000000.0,
+        "Sports and Creative Arts": 50000000.0,
+        "Women Empowerment": 100000000.0,
+        "Youth Empowerment": 100000000.0
+      }
+    },
+    "Kasungu": {
+      "total": 50000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 36000000000.0,
+        "District Wide Projects": 5000000000.0,
+        "Education Bursaries": 1500000000.0,
+        "Project Management Costs": 2500000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 2500000000.0,
+        "Sports and Creative Arts": 500000000.0,
+        "Women Empowerment": 1000000000.0,
+        "Youth Empowerment": 1000000000.0
+      }
+    },
+    "Kasungu Municipality": {
+      "total": 5000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 3600000000.0,
+        "District Wide Projects": 500000000.0,
+        "Education Bursaries": 150000000.0,
+        "Project Management Costs": 250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 250000000.0,
+        "Sports and Creative Arts": 50000000.0,
+        "Women Empowerment": 100000000.0,
+        "Youth Empowerment": 100000000.0
+      }
+    },
+    "Likoma Islands": {
+      "total": 5000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 3600000000.0,
+        "District Wide Projects": 500000000.0,
+        "Education Bursaries": 150000000.0,
+        "Project Management Costs": 250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 250000000.0,
+        "Sports and Creative Arts": 50000000.0,
+        "Women Empowerment": 100000000.0,
+        "Youth Empowerment": 100000000.0
+      }
+    },
+    "Lilongwe": {
+      "total": 95000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 68400000000.0,
+        "District Wide Projects": 9500000000.0,
+        "Education Bursaries": 2850000000.0,
+        "Project Management Costs": 4750000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 4750000000.0,
+        "Sports and Creative Arts": 950000000.0,
+        "Women Empowerment": 1900000000.0,
+        "Youth Empowerment": 1900000000.0
+      }
+    },
+    "Luchenza Minicipal": {
+      "total": 5000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 3600000000.0,
+        "District Wide Projects": 500000000.0,
+        "Education Bursaries": 150000000.0,
+        "Project Management Costs": 250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 250000000.0,
+        "Sports and Creative Arts": 50000000.0,
+        "Women Empowerment": 100000000.0,
+        "Youth Empowerment": 100000000.0
+      }
+    },
+    "Mangochi": {
+      "total": 60000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 43200000000.0,
+        "District Wide Projects": 6000000000.0,
+        "Education Bursaries": 1800000000.0,
+        "Project Management Costs": 3000000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 3000000000.0,
+        "Sports and Creative Arts": 600000000.0,
+        "Women Empowerment": 1200000000.0,
+        "Youth Empowerment": 1200000000.0
+      }
+    },
+    "Mangochi Town": {
+      "total": 5000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 3600000000.0,
+        "District Wide Projects": 500000000.0,
+        "Education Bursaries": 150000000.0,
+        "Project Management Costs": 250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 250000000.0,
+        "Sports and Creative Arts": 50000000.0,
+        "Women Empowerment": 100000000.0,
+        "Youth Empowerment": 100000000.0
+      }
+    },
+    "Mchinji": {
+      "total": 35000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 25200000000.0,
+        "District Wide Projects": 3500000000.0,
+        "Education Bursaries": 1050000000.0,
+        "Project Management Costs": 1750000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1750000000.0,
+        "Sports and Creative Arts": 350000000.0,
+        "Women Empowerment": 700000000.0,
+        "Youth Empowerment": 700000000.0
+      }
+    },
+    "Mzimba": {
+      "total": 65000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 46800000000.0,
+        "District Wide Projects": 6500000000.0,
+        "Education Bursaries": 1950000000.0,
+        "Project Management Costs": 3250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 3250000000.0,
+        "Sports and Creative Arts": 650000000.0,
+        "Women Empowerment": 1300000000.0,
+        "Youth Empowerment": 1300000000.0
+      }
+    },
+    "Mulanje": {
+      "total": 45000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 32400000000.0,
+        "District Wide Projects": 4500000000.0,
+        "Education Bursaries": 1350000000.0,
+        "Project Management Costs": 2250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 2250000000.0,
+        "Sports and Creative Arts": 450000000.0,
+        "Women Empowerment": 900000000.0,
+        "Youth Empowerment": 900000000.0
+      }
+    },
+    "Mwanza": {
+      "total": 10000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 7200000000.0,
+        "District Wide Projects": 1000000000.0,
+        "Education Bursaries": 300000000.0,
+        "Project Management Costs": 500000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 500000000.0,
+        "Sports and Creative Arts": 100000000.0,
+        "Women Empowerment": 200000000.0,
+        "Youth Empowerment": 200000000.0
+      }
+    },
+    "Neno": {
+      "total": 15000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 10800000000.0,
+        "District Wide Projects": 1500000000.0,
+        "Education Bursaries": 450000000.0,
+        "Project Management Costs": 750000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 750000000.0,
+        "Sports and Creative Arts": 150000000.0,
+        "Women Empowerment": 300000000.0,
+        "Youth Empowerment": 300000000.0
+      }
+    },
+    "Nkhatabay": {
+      "total": 30000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 21600000000.0,
+        "District Wide Projects": 3000000000.0,
+        "Education Bursaries": 900000000.0,
+        "Project Management Costs": 1500000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1500000000.0,
+        "Sports and Creative Arts": 300000000.0,
+        "Women Empowerment": 600000000.0,
+        "Youth Empowerment": 600000000.0
+      }
+    },
+    "Nkhotakota": {
+      "total": 25000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 18000000000.0,
+        "District Wide Projects": 2500000000.0,
+        "Education Bursaries": 750000000.0,
+        "Project Management Costs": 1250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1250000000.0,
+        "Sports and Creative Arts": 250000000.0,
+        "Women Empowerment": 500000000.0,
+        "Youth Empowerment": 500000000.0
+      }
+    },
+    "Nsanje": {
+      "total": 25000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 18000000000.0,
+        "District Wide Projects": 2500000000.0,
+        "Education Bursaries": 750000000.0,
+        "Project Management Costs": 1250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1250000000.0,
+        "Sports and Creative Arts": 250000000.0,
+        "Women Empowerment": 500000000.0,
+        "Youth Empowerment": 500000000.0
+      }
+    },
+    "Ntcheu": {
+      "total": 40000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 28800000000.0,
+        "District Wide Projects": 4000000000.0,
+        "Education Bursaries": 1200000000.0,
+        "Project Management Costs": 2000000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 2000000000.0,
+        "Sports and Creative Arts": 400000000.0,
+        "Women Empowerment": 800000000.0,
+        "Youth Empowerment": 800000000.0
+      }
+    },
+    "Ntchisi": {
+      "total": 25000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 18000000000.0,
+        "District Wide Projects": 2500000000.0,
+        "Education Bursaries": 750000000.0,
+        "Project Management Costs": 1250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1250000000.0,
+        "Sports and Creative Arts": 250000000.0,
+        "Women Empowerment": 500000000.0,
+        "Youth Empowerment": 500000000.0
+      }
+    },
+    "Phalombe": {
+      "total": 25000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 18000000000.0,
+        "District Wide Projects": 2500000000.0,
+        "Education Bursaries": 750000000.0,
+        "Project Management Costs": 1250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1250000000.0,
+        "Sports and Creative Arts": 250000000.0,
+        "Women Empowerment": 500000000.0,
+        "Youth Empowerment": 500000000.0
+      }
+    },
+    "Rumphi": {
+      "total": 20000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 14400000000.0,
+        "District Wide Projects": 2000000000.0,
+        "Education Bursaries": 600000000.0,
+        "Project Management Costs": 1000000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1000000000.0,
+        "Sports and Creative Arts": 200000000.0,
+        "Women Empowerment": 400000000.0,
+        "Youth Empowerment": 400000000.0
+      }
+    },
+    "Salima": {
+      "total": 30000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 21600000000.0,
+        "District Wide Projects": 3000000000.0,
+        "Education Bursaries": 900000000.0,
+        "Project Management Costs": 1500000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 1500000000.0,
+        "Sports and Creative Arts": 300000000.0,
+        "Women Empowerment": 600000000.0,
+        "Youth Empowerment": 600000000.0
+      }
+    },
+    "Thyolo": {
+      "total": 40000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 28800000000.0,
+        "District Wide Projects": 4000000000.0,
+        "Education Bursaries": 1200000000.0,
+        "Project Management Costs": 2000000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 2000000000.0,
+        "Sports and Creative Arts": 400000000.0,
+        "Women Empowerment": 800000000.0,
+        "Youth Empowerment": 800000000.0
+      }
+    },
+    "Zomba": {
+      "total": 45000000000.0,
+      "categories": {
+        "Construction and Rehabilitation": 32400000000.0,
+        "District Wide Projects": 4500000000.0,
+        "Education Bursaries": 1350000000.0,
+        "Project Management Costs": 2250000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 2250000000.0,
+        "Sports and Creative Arts": 450000000.0,
+        "Women Empowerment": 900000000.0,
+        "Youth Empowerment": 900000000.0
+      }
+    },
+    "Machinga": {
+      "total": 30228646288.0,
+      "categories": {
+        "Construction and Rehabilitation": 19028646288.0,
+        "District Wide Projects": 4000000000.0,
+        "Education Bursaries": 1200000000.0,
+        "Project Management Costs": 2000000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 2000000000.0,
+        "Sports and Creative Arts": 400000000.0,
+        "Women Empowerment": 800000000.0,
+        "Youth Empowerment": 800000000.0
+      }
+    },
+    "Zomba City": {
+      "total": 7557161572.0,
+      "categories": {
+        "Construction and Rehabilitation": 4757161572.0,
+        "District Wide Projects": 1000000000.0,
+        "Education Bursaries": 300000000.0,
+        "Project Management Costs": 500000000.0,
+        "Rehabilitation of Infrastructure Damaged by Disasters": 500000000.0,
+        "Sports and Creative Arts": 100000000.0,
+        "Women Empowerment": 200000000.0,
+        "Youth Empowerment": 200000000.0
+      }
+    }
+  },
+  "categories": [
+    "Construction and Rehabilitation",
+    "District Wide Projects",
+    "Education Bursaries",
+    "Project Management Costs",
+    "Rehabilitation of Infrastructure Damaged by Disasters",
+    "Sports and Creative Arts",
+    "Women Empowerment",
+    "Youth Empowerment"
+  ]
+}
