@@ -1,37 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="A comprehensive interactive dashboard visualizing CDF for Children investments across Malawi.">
+    <meta name="description" content="Explore child-focused CDF investments across Malawi with GIS insights.">
     <meta name="author" content="Malawi CDF for Children Dashboard">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="CDF for Children Dashboard - Malawi">
-    <meta property="og:description"
-        content="Explore and analyze CDF for Children investments by district, category, and child-focused funding indicators across Malawi.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/username/project/main/preview.png">
+    <meta property="og:title" content="Malawi CDF Dashboard for Children">
+    <meta property="og:description" content="Explore child-focused CDF investments across Malawi with GIS insights.">
+    <meta property="og:image" content="https://washways.org/assets/images/malawicdf4chidren-preview.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="CDF for Children Dashboard - Malawi">
-    <meta property="twitter:description"
-        content="Explore and analyze CDF for Children investments by district, category, and child-focused funding indicators across Malawi.">
+    <meta property="twitter:description" content="Explore and analyze CDF for Children investments by district, category, and child-focused funding indicators across Malawi.">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/username/project/main/preview.png">
 
-    <title>CDF for Children Dashboard - Malawi</title>
+    <title>Malawi CDF Dashboard for Children</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 
     <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 
     <!-- Turf.js for GeoJSON Processing -->
     <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
@@ -39,7 +33,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:,">
-</head>
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Malawi CDF Dashboard for Children"><meta name="twitter:description" content="Explore child-focused CDF investments across Malawi with GIS insights."><meta name="twitter:image" content="https://washways.org/assets/images/malawicdf4chidren-preview.jpg"><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-64GCB9QDB5"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-64GCB9QDB5');
+</script></head>
 
 <body>
     <div id="splash-screen" class="splash-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="splash-title">
@@ -85,7 +84,7 @@
                 </div>
                 <div class="top-report-bar">
                     <div class="top-report-head">
-                        <h3>Print & Excel Reports</h3>
+                        <h3>Print &amp; Excel Reports</h3>
                         <p>Choose a scope, then output format. Context: <strong id="topbar-district-context">National (Select District for Option 3)</strong></p>
                     </div>
                     <div class="report-option-grid">
@@ -232,22 +231,20 @@
                             <option value="count">Hazard Metric: Exposed Children (#)</option>
                             <option value="pct">Hazard Metric: Exposed Children (%)</option>
                         </select>
-                        <label class="outline-toggle"><input id="toggle-constituency-outlines" type="checkbox" checked> Constituency Outlines</label>
-                        <label class="outline-toggle"><input id="toggle-district-outlines" type="checkbox" checked> District Outlines</label>
+                        <label class="outline-toggle"><input id="toggle-constituency-outlines" type="checkbox" checked=""> Constituency Outlines</label>
+                        <label class="outline-toggle"><input id="toggle-district-outlines" type="checkbox" checked=""> District Outlines</label>
                     </div>
                 </div>
                 <div class="map-content-layout">
                     <div id="map" class="map-container map-main"></div>
                     <div class="info-sidebar">
                         <div id="district-info-box" class="glass-panel info-panel">
-                            <div
-                                style="color: var(--text-secondary); font-style: italic; text-align: center; margin-top: 40%;">
+                            <div style="color: var(--text-secondary); font-style: italic; text-align: center; margin-top: 40%;">
                                 Hover over the
                                 map for District metrics.</div>
                         </div>
                         <div id="constituency-info-box" class="glass-panel info-panel">
-                            <div
-                                style="color: var(--text-secondary); font-style: italic; text-align: center; margin-top: 40%;">
+                            <div style="color: var(--text-secondary); font-style: italic; text-align: center; margin-top: 40%;">
                                 Hover over the
                                 map for Constituency metrics.</div>
                         </div>
@@ -258,7 +255,7 @@
 
     <!-- Charts Container -->
     <div class="charts-section">
-        <details class="chart-accordion" id="category-accordion" open>
+        <details class="chart-accordion" id="category-accordion" open="">
             <summary>
                 <span>Category Analytics</span>
                 <span class="accordion-help" title="Shows allocation totals by investment category for the selected scope.">?</span>
@@ -292,8 +289,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Helper scripts for colors mapping -->
@@ -301,6 +297,7 @@
 
     <!-- Custom JS -->
     <script src="app.js"></script>
-</body>
 
-</html>
+
+
+</body></html>
